@@ -1,0 +1,82 @@
+/* Default Light Theme */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: antiquewhite;
+  color: #e63946;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #e63946;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #e63946;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: antiquewhite;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Button Style */
+#theme-btn {
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theme-btn:hover {
+  background-color: #d62828;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark section {
+  background-color: #1f1f1f;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #1e1e1e;
+  color: #ff6b35;
+}
+
+body.dark nav a {
+  color: #ff6b35;
+}

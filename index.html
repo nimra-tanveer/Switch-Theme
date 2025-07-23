@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>What is HTML?</h1>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <a href="#features">Features</a>
+      <a href="#usage">Usage</a>
+    </nav>
+    <!-- Theme Switch Button -->
+    <button id="theme-btn">Switch to Dark Mode</button>
+  </header>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+      HTML (HyperText Markup Language) is the standard language used to create web pages.
+      It provides the basic structure of a website using elements like headings, paragraphs, and links.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features of HTML</h2>
+    <ul>
+      <li>It is easy to learn and use.</li>
+      <li>Allows embedding of multimedia like images, videos, and audio.</li>
+      <li>Forms the backbone of all websites.</li>
+      <li>Works together with CSS and JavaScript to create modern websites.</li>
+    </ul>
+  </section>
+
+  <section id="usage">
+    <h2>Where is HTML Used?</h2>
+    <p>
+      HTML is used everywhere on the web. It structures content, creates links between pages, 
+      and is the foundation for web applications and websites.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Learn HTML Basics</p>
+  </footer>
+
+  <!-- JavaScript for theme toggle -->
+  <script>
+    const themeBtn = document.getElementById("theme-btn");
+
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      // Change button text dynamically
+      if (document.body.classList.contains("dark")) {
+        themeBtn.textContent = "Switch to Light Mode";
+      } else {
+        themeBtn.textContent = "Switch to Dark Mode";
+      }
+    });
+  </script>
+</body>
+</html>
